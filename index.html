@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>react</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>react</h1>
+					<svg width="20%" height="20%" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg"
+						class="text-link dark:text-link-dark w-24 lg:w-28 mb-10 lg:mb-8 mt-12 h-auto mx-auto self-start">
+						<circle cx="0" cy="0" r="2" fill="currentColor"></circle>
+						<g stroke="currentColor" stroke-width="1" fill="none">
+							<ellipse rx="10" ry="4.5"></ellipse>
+							<ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
+							<ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
+						</g>
+					</svg>
+				</section>
+
+				<section>
+					<p>what exactly is it?</p>
+					<ul>
+						<li>library</li>
+						<li>for ui</li>
+						<li>declarative</li>
+						<li>jsx (html in js, yes)</li>
+					</ul>
+				</section>
+
+				<section>
+					<pre>
+							<code style="font-size: 15px;">
+			import React, &#123; useState &#125; from 'react';
+			function Counter() &#123;
+				const [count, setCount] = useState(0);
+				return (
+					&lt;div&gt;
+						&lt;p&gt;counter: &#123;count&#125;&lt;/p&gt;
+						&lt;button onClick=&#123;() =&gt; setCount(count + 1)&#125;&gt;bigger&lt;/button&gt;
+						&lt;button onClick=&#123;() =&gt; setCount(count - 1)&#125;&gt;smaller&lt;/button&gt;
+					&lt;/div&gt;
+				);
+			&#125;
+			export default Counter;
+							</code>
+						</pre>
+				</section>
+
+				<section>
+					<p>where can i find more?</p>
+					<ul>
+						<li>
+							<a href="https://react.dev">react.dev</a>
+						</li>
+						<li>
+							<a href="https://www.codecademy.com/enrolled/courses/react-101">codeacademy.com</a>
+						</li>
+					</ul>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			});
+		</script>
+	</body>
+
+</html>
